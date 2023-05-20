@@ -1,5 +1,4 @@
 const express = require("express");
-const db = require("mysql2");
 
 // const connection = db.createConnection({
 //   host: "localhost",
@@ -28,6 +27,4 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
 
-const Connect = app.listen("3000", () => {
-  console.log("Server berjalan pada http://localhost:3000");
-});
+app.listen(process.env.PORT || 80);
