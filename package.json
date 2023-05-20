@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node Server/connect.js",
+    "start": "node server.js",
     "start-dev": "nodemon Server/connect.js"
   },
   "keywords": [],
