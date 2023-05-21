@@ -28,6 +28,10 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
 
+app.get("/experience", (req, res) => {
+  res.render("experience.ejs");
+});
+
 const Connect = app.listen("3007", () => {
   console.log("Server berjalan pada http://localhost:3007");
 });

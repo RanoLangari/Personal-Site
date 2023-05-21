@@ -27,4 +27,8 @@ app.get("/contact", (req, res) => {
   res.render("contact.ejs");
 });
 
+app.get("/experience", (req, res) => {
+  res.render("experience.ejs");
+});
+
 app.listen(process.env.PORT || 80);
