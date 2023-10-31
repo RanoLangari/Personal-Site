@@ -1,11 +1,4 @@
 const express = require("express");
-
-// const connection = db.createConnection({
-//   host: "localhost",
-//   user: "root",
-//   database: "betaglowing",
-// });
-
 const app = express();
 
 app.set("view engine", "ejs");
@@ -31,4 +24,6 @@ app.get("/experience", (req, res) => {
   res.render("experience.ejs");
 });
 
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server is running on port 3000");
+});
